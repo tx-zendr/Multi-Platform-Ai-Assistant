@@ -42,71 +42,73 @@ MySQL           ChromaDB
 
 
      
-##⚙️ Tech Stack
-Python
-Google Gemini API
-ChromaDB (Vector Database)
-MySQL
-Discord API (discord.py)
-Telegram Bot API
-LangChain (optional integration)
+## ⚙️ Tech Stack
+- Python
+- Google Gemini API
+- ChromaDB (Vector Database)
+- MySQL
+- Discord API (discord.py)
+- Telegram Bot API
+- LangChain (optional integration)
 
 
-##🧠 System Workflow
-User sends message via Discord/Telegram
-Bot forwards request to backend
-System retrieves chat history (MySQL)
-If needed, performs semantic search (ChromaDB)
-Relevant context is added to prompt
-Gemini generates response
-Response is returned & stored in memory
+## 🧠 System Workflow
+- User sends message via Discord/Telegram
+- Bot forwards request to backend
+- System retrieves chat history (MySQL)
+- If needed, performs semantic search (ChromaDB)
+- Relevant context is added to prompt
+- Gemini generates response
+- Response is returned & stored in memory
 
 
 
 
-##📄 RAG Pipeline
+## 📄 RAG Pipeline
 Document → Chunking → Embedding → ChromaDB Storage
 User Query → Embedding → Similarity Search → Context → Gemini
-📦 Installation
-git clone https://github.com/tx-zendr/multi-platform-ai-assistant
-cd ai-assistant
-pip install -r requirements.txt
+
+##📦 Installation
+- git clone https://github.com/tx-zendr/multi-platform-ai-assistant
+- cd ai-assistant
+- pip install -r requirements.txt
 
 
 
 
-##🔑 Environment Variables
+## 🔑 Environment Variables
 
-Create a .env file:
+- Create a .env file:
 
-GEMINI_API_KEY=your_api_key
-DISCORD_TOKEN=your_token
-TELEGRAM_TOKEN=your_token
-MYSQL_HOST=localhost
-MYSQL_USER=root
-MYSQL_PASSWORD=your_password
-MYSQL_DB=bot
-▶️ Run Project
-python main.py
-
-
-
-##📌 Project Structure
-bots/
-backend/
-database/
-vector_db/
-documents/
-main.py
+- GEMINI_API_KEY=your_api_key
+- DISCORD_TOKEN=your_token
+- TELEGRAM_TOKEN=your_token
+- MYSQL_HOST=localhost
+- MYSQL_USER=root
+- MYSQL_PASSWORD=your_password
+- MYSQL_DB=bot
+- ▶️ Run Project
+- python main.py
 
 
 
-##🚀 Future Improvements
-Improved RAG chunking strategy
-Deployment on cloud (AWS / GCP)
-Advanced memory summarization
-Rate limiting & caching
-Web dashboard for monitoring
-📜 License
+## 📌 Project Structure
+- bots/
+- backend/
+- database/
+- vector_db/
+- documents/
+- main.py
+
+
+
+## 🚀 Future Improvements
+- Improved RAG chunking strategy
+- Deployment on cloud (AWS / GCP)
+- Advanced memory summarization
+- Rate limiting & caching
+- Web dashboard for monitoring
+
+## 📜 License
 
 This project is open-source and available for learning and educational purposes.
